@@ -18,6 +18,7 @@ public class Prog1 {
 		driver.manage().window().maximize();
 		
 		//Mouse over actions
+		Thread.sleep(5000);
 		WebElement interactions = driver.findElement(By.xpath("//a[.='Interactions ']"));
 		Actions action = new Actions(driver);
 		action.moveToElement(interactions).perform();
