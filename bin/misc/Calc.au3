@@ -1,0 +1,5 @@
+WinActivate("Calculator")
+Send("10")
+Send("-")
+Send("9")
+Send("=")
