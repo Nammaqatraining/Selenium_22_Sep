@@ -19,8 +19,11 @@ public class DemoC {
 			System.out.println("Unsucess");
 		}*/
 		
+		System.out.println("This is where comparision begins");
+		
 		Assert.assertEquals(actualTitle, expectedTitle, "Title is mismatched");
 		
+		System.out.println("This is end of the program");
 		
 	}
 	
