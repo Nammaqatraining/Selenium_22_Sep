@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="day22.DemoF" class="method navigator-link" hash-for-method="checkOut">checkOut</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="day22.DemoF" class="method navigator-link" hash-for-method="checkOut(user1, pwd1)">checkOut(user1, pwd1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -131,7 +131,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="day22.DemoF" class="method navigator-link" hash-for-method="shopping">shopping</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="day22.DemoF" class="method navigator-link" hash-for-method="shopping(firefox, https://demo.automationtesting.in/Register.html)">shopping(firefox, https://demo.automationtesting.in/Register.html)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,11 +154,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkOut">
-                  </a> <!-- checkOut -->
+                  <a name="checkOut(user1, pwd1)">
+                  </a> <!-- checkOut(user1, pwd1) -->
                   <span class="method-name">checkOut</span>
+                  <span class="parameters">(user1,pwd1)</span>
                   <div class="stack-trace">java.lang.AssertionError: null
-	at day22.DemoF.checkOut(DemoF.java:18)
+	at day22.DemoF.checkOut(DemoF.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -178,7 +179,7 @@
                   </a> <!-- paymentGateWay -->
                   <span class="method-name">paymentGateWay</span>
                   <div class="stack-trace">org.testng.SkipException: Pay ment gateway skipped
-	at day22.DemoF.paymentGateWay(DemoF.java:26)
+	at day22.DemoF.paymentGateWay(DemoF.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
@@ -194,9 +195,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="shopping">
-                  </a> <!-- shopping -->
+                  <a name="shopping(firefox, https://demo.automationtesting.in/Register.html)">
+                  </a> <!-- shopping(firefox, https://demo.automationtesting.in/Register.html) -->
                   <span class="method-name">shopping</span>
+                  <span class="parameters">(firefox,https://demo.automationtesting.in/Register.html)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,6 +217,10 @@
     &lt;listener class-name=&quot;day22.CustomListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestA&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;userName&quot; value=&quot;user1&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;pwd1&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://demo.automationtesting.in/Register.html&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;day22.DemoF&quot;&gt;
         &lt;methods&gt;
@@ -266,20 +272,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'shopping')
 data.setCell(0, 2, 'day22.DemoF')
-data.setCell(0, 3, 18);
+data.setCell(0, 3, 23);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkOut')
 data.setCell(1, 2, 'day22.DemoF')
-data.setCell(1, 3, 5);
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'paymentGateWay')
 data.setCell(2, 2, 'day22.DemoF')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 3);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 ms</span>
+              <span class="suite-total-time">Total running time: 32 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -291,15 +297,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">shopping</span>
+              <span class="reporter-method-name">shopping(firefox, https://demo.automationtesting.in/Register.html)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">browserName firefox</span>
+                <span class="reporter-method-output">url https://demo.automationtesting.in/Register.html</span>
                 <span class="reporter-method-output">Shopping</span>
+                <span class="reporter-method-output"><a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'><img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a></span>
                 <span class="reporter-method-output">Test case passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">checkOut</span>
+              <span class="reporter-method-name">checkOut(user1, pwd1)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User Name user1</span>
+                <span class="reporter-method-output">Password pwd1</span>
+                <span class="reporter-method-output"><a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'><img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a></span>
                 <span class="reporter-method-output">Test case failed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -326,18 +338,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">day22.DemoF</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">shopping</span>
+                <span class="method-name">shopping(firefox, https://demo.automationtesting.in/Register.html)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">checkOut</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-name">checkOut(user1, pwd1)</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">paymentGateWay</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

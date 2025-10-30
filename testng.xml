@@ -5,6 +5,10 @@
 	<listener class-name="day22.CustomListener"></listener>
 </listeners>
   <test thread-count="5" name="TestA">
+  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="url" value="https://demo.automationtesting.in/Register.html"></parameter>
+  <parameter name="userName" value="user1"></parameter>
+  <parameter name="pwd" value="pwd1"></parameter>
     <classes>
       <class name="day22.DemoF">
 	     <methods>

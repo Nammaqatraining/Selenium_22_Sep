@@ -5,10 +5,14 @@
     <listener class-name="day22.CustomListener"/>
   </listeners>
   <test thread-count="5" name="TestA(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="userName" value="user1"/>
+    <parameter name="pwd" value="pwd1"/>
+    <parameter name="url" value="https://demo.automationtesting.in/Register.html"/>
     <classes>
       <class name="day22.DemoF">
         <methods>
-          <include name="checkOut"/>
+          <include name="checkOut" invocation-numbers="0"/>
           <include name="paymentGateWay"/>
         </methods>
       </class> <!-- day22.DemoF -->

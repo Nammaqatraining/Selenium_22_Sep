@@ -2,10 +2,28 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
     <line>
+      <![CDATA[browserName firefox]]>
+    </line>
+    <line>
+      <![CDATA[url https://demo.automationtesting.in/Register.html]]>
+    </line>
+    <line>
       <![CDATA[Shopping]]>
     </line>
     <line>
+      <![CDATA[<a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'><img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a>]]>
+    </line>
+    <line>
       <![CDATA[Test case passed]]>
+    </line>
+    <line>
+      <![CDATA[User Name user1]]>
+    </line>
+    <line>
+      <![CDATA[Password pwd1]]>
+    </line>
+    <line>
+      <![CDATA[<a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'><img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a>]]>
     </line>
     <line>
       <![CDATA[Test case failed]]>
@@ -14,22 +32,55 @@
       <![CDATA[Test case skipped]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-10-28T08:36:30 IST" name="Suite" finished-at="2025-10-28T08:36:30 IST" duration-ms="81">
+  <suite started-at="2025-10-30T07:49:24 IST" name="Suite" finished-at="2025-10-30T07:49:24 IST" duration-ms="93">
     <groups>
     </groups>
-    <test started-at="2025-10-28T08:36:30 IST" name="TestA" finished-at="2025-10-28T08:36:30 IST" duration-ms="81">
+    <test started-at="2025-10-30T07:49:24 IST" name="TestA" finished-at="2025-10-30T07:49:24 IST" duration-ms="93">
       <class name="day22.DemoF">
-        <test-method signature="shopping()[pri:0, instance:day22.DemoF@1573f9fc]" started-at="2025-10-28T08:36:30 IST" name="shopping" finished-at="2025-10-28T08:36:30 IST" duration-ms="18" status="PASS">
+        <test-method signature="shopping(java.lang.String,java.lang.String)[pri:0, instance:day22.DemoF@1f2586d6]" started-at="2025-10-30T07:49:24 IST" name="shopping" finished-at="2025-10-30T07:49:24 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.automationtesting.in/Register.html]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
+              <![CDATA[browserName firefox]]>
+            </line>
+            <line>
+              <![CDATA[url https://demo.automationtesting.in/Register.html]]>
+            </line>
+            <line>
               <![CDATA[Shopping]]>
+            </line>
+            <line>
+              <![CDATA[<a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'><img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a>]]>
             </line>
             <line>
               <![CDATA[Test case passed]]>
             </line>
           </reporter-output>
         </test-method> <!-- shopping -->
-        <test-method signature="checkOut()[pri:0, instance:day22.DemoF@1573f9fc]" started-at="2025-10-28T08:36:30 IST" name="checkOut" finished-at="2025-10-28T08:36:30 IST" duration-ms="5" status="FAIL">
+        <test-method signature="checkOut(java.lang.String,java.lang.String)[pri:0, instance:day22.DemoF@1f2586d6]" started-at="2025-10-30T07:49:24 IST" name="checkOut" finished-at="2025-10-30T07:49:24 IST" duration-ms="6" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd1]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -38,7 +89,7 @@
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.fail(Assert.java:116)
-at day22.DemoF.checkOut(DemoF.java:18)
+at day22.DemoF.checkOut(DemoF.java:28)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -70,18 +121,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
+              <![CDATA[User Name user1]]>
+            </line>
+            <line>
+              <![CDATA[Password pwd1]]>
+            </line>
+            <line>
+              <![CDATA[<a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'><img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a>]]>
+            </line>
+            <line>
               <![CDATA[Test case failed]]>
             </line>
           </reporter-output>
         </test-method> <!-- checkOut -->
-        <test-method signature="paymentGateWay()[pri:0, instance:day22.DemoF@1573f9fc]" started-at="2025-10-28T08:36:30 IST" name="paymentGateWay" finished-at="2025-10-28T08:36:30 IST" duration-ms="1" status="SKIP">
+        <test-method signature="paymentGateWay()[pri:0, instance:day22.DemoF@1f2586d6]" started-at="2025-10-30T07:49:24 IST" name="paymentGateWay" finished-at="2025-10-30T07:49:24 IST" duration-ms="3" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Pay ment gateway skipped]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Pay ment gateway skipped
-at day22.DemoF.paymentGateWay(DemoF.java:26)
+at day22.DemoF.paymentGateWay(DemoF.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

@@ -13,12 +13,17 @@ public class CustomListener implements ITestListener{
 
 		  public void onTestSuccess(ITestResult result) {
 		    // not implemented
+			  Reporter.log("<a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'>"
+				  		+ "<img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a>", true);
 			  Reporter.log("Test case passed", true);	
 		  }
 
 
 		  public void onTestFailure(ITestResult result) {
 		    // not implemented
+			  Reporter.log("<a href='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png'>"
+			  		+ "<img src='file:///C:/Users/Admin/Desktop/Slenium/fb-inputbox.png' height=100 width=100> </a>", true);
+			  
 			  Reporter.log("Test case failed", true);	
 		  }
 
