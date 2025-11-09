@@ -17,6 +17,7 @@ public class Prog1 {
 		
 		
 		WebElement ele1 = driver.findElement(By.xpath("//td[text()='ACD']"));
+
 		System.out.println(driver.findElement(RelativeLocator.with(By.tagName("th")).above(ele1)).getText());
 		
 		WebElement ele2 = driver.findElement(By.xpath("//td[text()='EFG']"));
