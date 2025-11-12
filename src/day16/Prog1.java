@@ -31,11 +31,11 @@ public class Prog1 {
 		
 		
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,250)");
+		jse.executeScript("window.scrollBy(0,250)"); // bottom to top
 		Thread.sleep(5000);
-		jse.executeScript("window.scrollBy(250,0)");
+		jse.executeScript("window.scrollBy(250,0)"); //top to bottom
 		Thread.sleep(5000);
-		jse.executeScript("window.scrollBy(0,-100)");
+		jse.executeScript("window.scrollBy(0,-100)"); //left to right
 		
 		
 		

@@ -14,6 +14,7 @@ public class Prog3 {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.automationtesting.in/Register.html");
+		driver.manage().deleteCookieNamed("cookie name");
 		
 		WebElement ele1 = driver.findElement(By.xpath("//h1[.='Automation Demo Site ']"));
 		
